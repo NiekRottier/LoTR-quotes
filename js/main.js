@@ -19,7 +19,6 @@ function getQuotes() {
 getQuotes()
 
 async function quoteSearch(){
-    console.log('Button pressed')
 
     // Select random qoute
     let quote = quotes[Math.floor(Math.random() * 2390)]
