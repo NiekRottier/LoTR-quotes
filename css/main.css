@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@500&family=Tangerine&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 96vw;
+  padding: 30px 20px;
+  background-color: #ffffff;
+}
+
+#search {
+  font-size: 5em;
+  font-style: italic;
+  color: #53EBCA;
+  border-radius: 50px;
+  border: none;
+  border-left: solid 4px #53EBCA;
+  border-bottom: solid 4px #53EBCA;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+#search:hover {
+  border-color: #4edfbf;
+  color: #4edfbf;
+}
+
+#search:active {
+  border-color: #47ceb1;
+  color: #47ceb1;
+}
+
+#quoteContainer {
+  text-align: center;
+  color: #3FCBD4;
+}
+
+#quoteContainer #quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+#quoteContainer #character {
+  font-family: 'Tangerine', cursive;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#quoteContainer #movie {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+#pages div {
+  position: absolute;
+  top: 0;
+  width: 1vw;
+  height: 100vh;
+  -webkit-box-shadow: 5px 0 5px grey inset;
+          box-shadow: 5px 0 5px grey inset;
+}
+
+#pages div:nth-child(1) {
+  right: 0px;
+}
+
+#pages div:nth-child(2) {
+  right: 1vw;
+}
+
+#pages div:nth-child(3) {
+  right: 2vw;
+}
+
+#pages div:nth-child(4) {
+  right: 3vw;
+}
+
+#backgroundText {
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 90vw;
+  height: 100vh;
+  color: #fdfdfd;
+  font-family: 'Playfair Display', serif;
+  font-size: 9rem;
+}
+/*# sourceMappingURL=main.css.map */

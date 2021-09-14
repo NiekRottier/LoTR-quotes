@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@500&family=Tangerine&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 96vw;
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+
+#search{
+    font-size: 5em;
+    font-style: italic;
+    color: #53EBCA;
+
+    border-radius: 50px;
+    border: none;
+    border-left: solid 4px #53EBCA;
+    border-bottom: solid 4px #53EBCA;
+
+    cursor: pointer;
+
+    padding: 10px 30px;
+
+    &:hover{
+        border-color: #4edfbf;
+        color: #4edfbf;
+    }
+
+    &:active{
+        border-color: #47ceb1;
+        color: #47ceb1;
+    }
+}
+
+#quoteContainer{
+    text-align: center;
+    color: #3FCBD4;
+
+    #quote{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 3rem;
+    }
+
+    #character{
+        font-family: 'Tangerine', cursive;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    #movie{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+    }
+}
+
+#pages div{
+    position: absolute;
+    top: 0;
+    width: 1vw;
+    height: 100vh;
+
+    box-shadow: 5px 0 5px grey inset;
+
+    &:nth-child(1){
+        right: 0px;
+    }
+    &:nth-child(2){
+        right: 1vw;
+    }
+    &:nth-child(3){
+        right: 2vw;
+    }
+    &:nth-child(4){
+        right: 3vw;
+    }
+}
+
+#backgroundText{
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    z-index: -1;
+    overflow: hidden;
+    user-select: none;
+
+    width: 90vw;
+    height: 100vh;
+
+    color: #fdfdfd;
+    font-family: 'Playfair Display', serif;
+    font-size: 9rem;
+}
