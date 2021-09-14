@@ -24,9 +24,10 @@ body {
 }
 
 #search {
-  font-size: 5em;
+  font-size: 5rem;
   font-style: italic;
   color: #53EBCA;
+  text-align: center;
   border-radius: 50px;
   border: none;
   border-left: solid 4px #53EBCA;
@@ -45,6 +46,12 @@ body {
   color: #47ceb1;
 }
 
+@media screen and (max-width: 700px) {
+  #search {
+    font-size: 2.5rem;
+  }
+}
+
 #quoteContainer {
   text-align: center;
   color: #3FCBD4;
@@ -52,8 +59,8 @@ body {
 
 #quoteContainer #quote {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
   font-size: 3rem;
+  font-style: italic;
 }
 
 #quoteContainer #character {
@@ -67,13 +74,25 @@ body {
   font-style: italic;
 }
 
+@media screen and (max-width: 700px) {
+  #quoteContainer #quote {
+    font-size: 2rem;
+  }
+  #quoteContainer #character {
+    font-size: 2rem;
+  }
+  #quoteContainer #movie {
+    font-size: 1rem;
+  }
+}
+
 #pages div {
   position: absolute;
   top: 0;
   width: 1vw;
   height: 100vh;
-  -webkit-box-shadow: 5px 0 5px grey inset;
-          box-shadow: 5px 0 5px grey inset;
+  -webkit-box-shadow: 0.5vw 0 0.5vw grey inset;
+          box-shadow: 0.5vw 0 0.5vw grey inset;
 }
 
 #pages div:nth-child(1) {
@@ -107,5 +126,11 @@ body {
   color: #fdfdfd;
   font-family: 'Playfair Display', serif;
   font-size: 9rem;
+}
+
+@media screen and (max-width: 700px) {
+  #backgroundText {
+    font-size: 6rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
