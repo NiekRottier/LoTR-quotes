@@ -28,9 +28,10 @@ body{
     border-left: solid 4px #53EBCA;
     border-bottom: solid 4px #53EBCA;
 
-    cursor: pointer;
-
     padding: 10px 30px;
+
+    cursor: pointer;
+    user-select: none;
 
     &:hover{
         border-color: #4edfbf;

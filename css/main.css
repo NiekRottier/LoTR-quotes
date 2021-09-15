@@ -32,8 +32,12 @@ body {
   border: none;
   border-left: solid 4px #53EBCA;
   border-bottom: solid 4px #53EBCA;
-  cursor: pointer;
   padding: 10px 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #search:hover {
