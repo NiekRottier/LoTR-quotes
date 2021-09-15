@@ -63,14 +63,22 @@ body {
 
 #quoteContainer #quote {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
   font-style: italic;
+  font-size: 3rem;
 }
 
 #quoteContainer #character {
   font-family: 'Tangerine', cursive;
   font-size: 3rem;
   font-weight: 400;
+  color: #38b2bb;
+  text-decoration: none;
+}
+
+#quoteContainer #linkIcon {
+  display: none;
+  font-style: italic;
+  margin-left: 10px;
 }
 
 #quoteContainer #movie {
